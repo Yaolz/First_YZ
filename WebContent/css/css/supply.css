@@ -1,0 +1,9 @@
+@CHARSET "UTF-8";
+.bgcolor{
+	border:1px solid #d4d4d4;
+	margin-top:30px;
+	font-size:40px;
+}
+.bgcolor ul hover{
+	background-color:yellow;
+}

@@ -1,0 +1,4 @@
+Manifest-Version: 1.0
+Main-Class: com.sun.org.apache.xml.internal.security.keys.storage.impl
+ ementations.CertsInFilesystemDirectoryResolver
+

@@ -1,0 +1,95 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+font{
+	color:#000;
+	font-size:19%;
+}
+.brand{
+	padding: 5px;
+    border: 1px solid #ddd;
+    box-shadow: 1px 0px 3px #CCC;
+    padding-bottom: 2px;
+}
+body {
+	background-color:#ffffff;
+}
+a {
+	text-decoration: none;
+}
+.inverse{
+	background-color:#cdcdcd;
+	width:100%;
+}
+.inverse-button{
+	float:right;
+}
+.fons{
+	color:#004000;
+	font-size:19px;
+	
+	text-align: right;
+}
+.daohong1{
+	margin-top:4%;
+	width:100%;
+	height:60%;
+	background-color: #777;
+}
+.company{
+	margin-top:60px;
+}
+.goods div{
+	margin-top: 45px;
+}
+.iu{
+    filter: grayscale(1);
+    -webkit-filter: grayscale(1);
+    -webkit-filter: grayscale(1);
+}
+.ui{
+-webkit-filter: grayscale(0%);
+}
+.bot{
+	background-color:#cdcdcd;
+	text-align:center;
+	margin-top:40px;
+	height:200px;
+}
+.bot ul li{
+	margin-top:20px; 
+}
+.login{
+	width:40%;
+	margin-top:40px;
+	background-color:#ffffff;
+	border:1px solid #e5e5e5;
+}
+.logins{
+	width:80%;
+	margin-top:7%;
+	margin-bottom:7%;
+	text-align:center;
+	display: block;
+}
+.logins-input{
+	width:100%;
+}
+.carousel{
+	margin-top:7%;
+}
+.rows{
+	background-color: WHITE;
+	height:45px;
+}
+.rows  div{
+	margin-top: 15px;
+}
+.navbar a{
+	margin-top: 23px;
+}
+
+.div_img{
+	margin-top: 40px;
+}

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Context>
+
+	<Resource name="jdbc/datasource"
+	type="javax.sql.DataSource"
+	driverClassName="com.mysql.jdbc.Driver"
+	url="jdbc:mysql://localhost:3306/decorate?useUnicode=true&amp;characterEncoding=utf-8&amp;useSSL=false"
+	username="root"
+	password="123456"
+	maxToal="100"
+	maxIdle="30"
+	maxWaitMillis="10000"
+	/>
+</Context>

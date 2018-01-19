@@ -1,0 +1,15 @@
+@CHARSET "UTF-8";
+
+body {
+	background-color: white;
+}
+
+.company {
+	margin-top: 70px;
+	text-align: center;
+}
+
+.brand img {
+	margin-top: 35px;
+}
+

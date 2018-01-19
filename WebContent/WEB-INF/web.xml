@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+	xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd"
+	id="WebApp_ID" version="3.1">
+	<display-name>First_YZ</display-name>
+	<welcome-file-list>
+		<welcome-file>index.html</welcome-file>
+		<welcome-file>index.htm</welcome-file>
+		<welcome-file>index.jsp</welcome-file>
+		<welcome-file>default.html</welcome-file>
+		<welcome-file>default.htm</welcome-file>
+		<welcome-file>default.jsp</welcome-file>
+	</welcome-file-list>
+
+	<resource-ref>
+		<description>DB Connection</description>
+		<res-ref-name>jdbc/mysql</res-ref-name>
+		<res-type>javax.sql.DataSource</res-type>
+		<res-auth>Container</res-auth>
+	</resource-ref>
+
+	<filter>
+		<filter-name>EncodingFilter</filter-name>
+		<filter-class>com.yz.common.EncodingFilter</filter-class>
+	</filter>
+	<filter-mapping>
+		<filter-name>EncodingFilter</filter-name>
+		<url-pattern>/*</url-pattern>
+	</filter-mapping>
+	
+	<filter>
+		<filter-name>ManageFilter</filter-name>
+		<filter-class>com.yz.common.ManageFilter</filter-class>
+	</filter>
+	<filter-mapping>
+		<filter-name>ManageFilter</filter-name>
+		<url-pattern>/admins/*</url-pattern>
+		<url-pattern>/companys/*</url-pattern>
+		<url-pattern>/customers/*</url-pattern>
+		<url-pattern>/designers/*</url-pattern>
+		<url-pattern>/supplys/*</url-pattern>
+	</filter-mapping>
+
+	<servlet>
+		<servlet-name>CompanyServlet</servlet-name>
+		<servlet-class>com.yz.control.CompanyServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>CompanyServlet</servlet-name>
+		<url-pattern>/company/*</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>AdminServlet</servlet-name>
+		<servlet-class>com.yz.control.AdminServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>AdminServlet</servlet-name>
+		<url-pattern>/admin/*</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>CustomerServlet</servlet-name>
+		<servlet-class>com.yz.control.CustomerServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>CustomerServlet</servlet-name>
+		<url-pattern>/customer/*</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>SupplyServlet</servlet-name>
+		<servlet-class>com.yz.control.SupplyServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>SupplyServlet</servlet-name>
+		<url-pattern>/supply/*</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>DesignerServlet</servlet-name>
+		<servlet-class>com.yz.control.DesignerServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>DesignerServlet</servlet-name>
+		<url-pattern>/designer/*</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>CommonServlet</servlet-name>
+		<servlet-class>com.yz.control.CommonServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>CommonServlet</servlet-name>
+		<url-pattern>/common/*</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>CompanyCaseServlet</servlet-name>
+		<servlet-class>com.yz.control.CompanyCaseServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>CompanyCaseServlet</servlet-name>
+		<url-pattern>/comcase/*</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>ProductServlet</servlet-name>
+		<servlet-class>com.yz.control.ProductServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>ProductServlet</servlet-name>
+		<url-pattern>/product/*</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>DesignerCaseServlet</servlet-name>
+		<servlet-class>com.yz.control.DesignerCaseServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>DesignerCaseServlet</servlet-name>
+		<url-pattern>/descase/*</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>CompanyActivityServlet</servlet-name>
+		<servlet-class>com.yz.control.CompanyActivityServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>CompanyActivityServlet</servlet-name>
+		<url-pattern>/comactivity/*</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>SupplyActivityServlet</servlet-name>
+		<servlet-class>com.yz.control.SupplyActivityServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>SupplyActivityServlet</servlet-name>
+		<url-pattern>/supactivity/*</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>ColServlet</servlet-name>
+		<servlet-class>com.yz.control.ColServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>ColServlet</servlet-name>
+		<url-pattern>/col/*</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>AppointmentServlet</servlet-name>
+		<servlet-class>com.yz.control.AppointmentServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>AppointmentServlet</servlet-name>
+		<url-pattern>/app/*</url-pattern>
+	</servlet-mapping>
+
+</web-app>
